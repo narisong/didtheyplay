@@ -186,7 +186,7 @@
     "photo": "https://media.api-sports.io/football/players/3246.png",
     "games": [
       {
-        "minutes": 90,
+        "minutes": 61,
         "teams": [
           {
             "name": "Ivory Coast",
@@ -578,7 +578,7 @@
     "photo": "https://media.api-sports.io/football/players/19866.png",
     "games": [
       {
-        "minutes": 2,
+        "minutes": 3,
         "teams": [
           {
             "name": "Argentina",
@@ -1105,7 +1105,7 @@
         ]
       },
       {
-        "minutes": 72,
+        "minutes": 71,
         "teams": [
           {
             "name": "Argentina",
@@ -1456,7 +1456,21 @@
     "id": 17715,
     "name": "S. Alzate",
     "photo": "https://media.api-sports.io/football/players/17715.png",
-    "games": []
+    "games": [
+      {
+        "minutes": 46,
+        "teams": [
+          {
+            "name": "Mexico",
+            "logo": "https://media.api-sports.io/football/teams/16.png"
+          },
+          {
+            "name": "Colombia",
+            "logo": "https://media.api-sports.io/football/teams/8.png"
+          }
+        ]
+      }
+    ]
   },
   {
     "team": 51,
@@ -1526,7 +1540,21 @@
     "id": 17,
     "name": "C. Pulisic",
     "photo": "https://media.api-sports.io/football/players/17.png",
-    "games": []
+    "games": [
+      {
+        "minutes": 76,
+        "teams": [
+          {
+            "name": "Saudi Arabia",
+            "logo": "https://media.api-sports.io/football/teams/23.png"
+          },
+          {
+            "name": "USA",
+            "logo": "https://media.api-sports.io/football/teams/2384.png"
+          }
+        ]
+      }
+    ]
   },
   {
     "team": 496,
@@ -2159,6 +2187,19 @@
     "photo": "https://media.api-sports.io/football/players/3247.png",
     "games": [
       {
+        "minutes": 29,
+        "teams": [
+          {
+            "name": "Ivory Coast",
+            "logo": "https://media.api-sports.io/football/teams/1501.png"
+          },
+          {
+            "name": "Guinea",
+            "logo": "https://media.api-sports.io/football/teams/1509.png"
+          }
+        ]
+      },
+      {
         "minutes": 82,
         "teams": [
           {
@@ -2332,7 +2373,21 @@
     "id": 2990,
     "name": "I. Gueye",
     "photo": "https://media.api-sports.io/football/players/2990.png",
-    "games": []
+    "games": [
+      {
+        "minutes": 90,
+        "teams": [
+          {
+            "name": "Senegal",
+            "logo": "https://media.api-sports.io/football/teams/13.png"
+          },
+          {
+            "name": "Iran",
+            "logo": "https://media.api-sports.io/football/teams/22.png"
+          }
+        ]
+      }
+    ]
   },
   {
     "team": 45,
@@ -2354,6 +2409,19 @@
     "name": "J. Gbamin",
     "photo": "https://media.api-sports.io/football/players/3240.png",
     "games": [
+      {
+        "minutes": 29,
+        "teams": [
+          {
+            "name": "Ivory Coast",
+            "logo": "https://media.api-sports.io/football/teams/1501.png"
+          },
+          {
+            "name": "Guinea",
+            "logo": "https://media.api-sports.io/football/teams/1509.png"
+          }
+        ]
+      },
       {
         "minutes": 90,
         "teams": [
@@ -3012,6 +3080,19 @@
             "logo": "https://media.api-sports.io/football/teams/5161.png"
           }
         ]
+      },
+      {
+        "minutes": 44,
+        "teams": [
+          {
+            "name": "Mexico",
+            "logo": "https://media.api-sports.io/football/teams/16.png"
+          },
+          {
+            "name": "Colombia",
+            "logo": "https://media.api-sports.io/football/teams/8.png"
+          }
+        ]
       }
     ]
   },
@@ -3104,6 +3185,19 @@
           {
             "name": "Japan",
             "logo": "https://media.api-sports.io/football/teams/12.png"
+          },
+          {
+            "name": "USA",
+            "logo": "https://media.api-sports.io/football/teams/2384.png"
+          }
+        ]
+      },
+      {
+        "minutes": 90,
+        "teams": [
+          {
+            "name": "Saudi Arabia",
+            "logo": "https://media.api-sports.io/football/teams/23.png"
           },
           {
             "name": "USA",
@@ -3289,6 +3383,19 @@
           {
             "name": "Senegal",
             "logo": "https://media.api-sports.io/football/teams/13.png"
+          }
+        ]
+      },
+      {
+        "minutes": 76,
+        "teams": [
+          {
+            "name": "Senegal",
+            "logo": "https://media.api-sports.io/football/teams/13.png"
+          },
+          {
+            "name": "Iran",
+            "logo": "https://media.api-sports.io/football/teams/22.png"
           }
         ]
       }
@@ -3672,6 +3779,19 @@
             "logo": "https://media.api-sports.io/football/teams/5161.png"
           }
         ]
+      },
+      {
+        "minutes": 90,
+        "teams": [
+          {
+            "name": "Mexico",
+            "logo": "https://media.api-sports.io/football/teams/16.png"
+          },
+          {
+            "name": "Colombia",
+            "logo": "https://media.api-sports.io/football/teams/8.png"
+          }
+        ]
       }
     ]
   },
@@ -3958,7 +4078,7 @@
         ]
       },
       {
-        "minutes": 79,
+        "minutes": 78,
         "teams": [
           {
             "name": "Argentina",
@@ -4227,7 +4347,7 @@
         ]
       },
       {
-        "minutes": 24,
+        "minutes": 25,
         "teams": [
           {
             "name": "Brazil",
@@ -5164,7 +5284,21 @@
     "id": 2991,
     "name": "C. Kouyaté",
     "photo": "https://media.api-sports.io/football/players/2991.png",
-    "games": []
+    "games": [
+      {
+        "minutes": 27,
+        "teams": [
+          {
+            "name": "Senegal",
+            "logo": "https://media.api-sports.io/football/teams/13.png"
+          },
+          {
+            "name": "Iran",
+            "logo": "https://media.api-sports.io/football/teams/22.png"
+          }
+        ]
+      }
+    ]
   },
   {
     "team": 65,
@@ -5417,7 +5551,7 @@
     "photo": "https://media.api-sports.io/football/players/163.png",
     "games": [
       {
-        "minutes": 90,
+        "minutes": 61,
         "teams": [
           {
             "name": "Ivory Coast",
@@ -5500,7 +5634,7 @@
         ]
       },
       {
-        "minutes": 78,
+        "minutes": 79,
         "teams": [
           {
             "name": "Ukraine",
@@ -5732,6 +5866,19 @@
             "logo": "https://media.api-sports.io/football/teams/1504.png"
           }
         ]
+      },
+      {
+        "minutes": 90,
+        "teams": [
+          {
+            "name": "Nicaragua",
+            "logo": "https://media.api-sports.io/football/teams/5164.png"
+          },
+          {
+            "name": "Ghana",
+            "logo": "https://media.api-sports.io/football/teams/1504.png"
+          }
+        ]
       }
     ]
   },
@@ -5920,7 +6067,21 @@
     "id": 168,
     "name": "D. Sánchez",
     "photo": "https://media.api-sports.io/football/players/168.png",
-    "games": []
+    "games": [
+      {
+        "minutes": 90,
+        "teams": [
+          {
+            "name": "Mexico",
+            "logo": "https://media.api-sports.io/football/teams/16.png"
+          },
+          {
+            "name": "Colombia",
+            "logo": "https://media.api-sports.io/football/teams/8.png"
+          }
+        ]
+      }
+    ]
   },
   {
     "team": 47,
@@ -6062,6 +6223,19 @@
           {
             "name": "Senegal",
             "logo": "https://media.api-sports.io/football/teams/13.png"
+          }
+        ]
+      },
+      {
+        "minutes": 14,
+        "teams": [
+          {
+            "name": "Senegal",
+            "logo": "https://media.api-sports.io/football/teams/13.png"
+          },
+          {
+            "name": "Iran",
+            "logo": "https://media.api-sports.io/football/teams/22.png"
           }
         ]
       }
@@ -6467,7 +6641,7 @@
     "photo": "https://media.api-sports.io/football/players/18819.png",
     "games": [
       {
-        "minutes": 88,
+        "minutes": 87,
         "teams": [
           {
             "name": "Argentina",
@@ -7702,6 +7876,19 @@
             "logo": "https://media.api-sports.io/football/teams/13.png"
           }
         ]
+      },
+      {
+        "minutes": 90,
+        "teams": [
+          {
+            "name": "Senegal",
+            "logo": "https://media.api-sports.io/football/teams/13.png"
+          },
+          {
+            "name": "Iran",
+            "logo": "https://media.api-sports.io/football/teams/22.png"
+          }
+        ]
       }
     ]
   },
@@ -7828,6 +8015,19 @@
           {
             "name": "Japan",
             "logo": "https://media.api-sports.io/football/teams/12.png"
+          },
+          {
+            "name": "USA",
+            "logo": "https://media.api-sports.io/football/teams/2384.png"
+          }
+        ]
+      },
+      {
+        "minutes": 30,
+        "teams": [
+          {
+            "name": "Saudi Arabia",
+            "logo": "https://media.api-sports.io/football/teams/23.png"
           },
           {
             "name": "USA",
@@ -8509,7 +8709,7 @@
         ]
       },
       {
-        "minutes": 72,
+        "minutes": 73,
         "teams": [
           {
             "name": "Norway",
@@ -8954,7 +9154,21 @@
     "id": 73868,
     "name": "R. Pepi",
     "photo": "https://media.api-sports.io/football/players/73868.png",
-    "games": []
+    "games": [
+      {
+        "minutes": 59,
+        "teams": [
+          {
+            "name": "Saudi Arabia",
+            "logo": "https://media.api-sports.io/football/teams/23.png"
+          },
+          {
+            "name": "USA",
+            "logo": "https://media.api-sports.io/football/teams/2384.png"
+          }
+        ]
+      }
+    ]
   },
   {
     "team": 170,
@@ -11982,6 +12196,19 @@
             "logo": "https://media.api-sports.io/football/teams/2384.png"
           }
         ]
+      },
+      {
+        "minutes": 90,
+        "teams": [
+          {
+            "name": "Saudi Arabia",
+            "logo": "https://media.api-sports.io/football/teams/23.png"
+          },
+          {
+            "name": "USA",
+            "logo": "https://media.api-sports.io/football/teams/2384.png"
+          }
+        ]
       }
     ]
   },
@@ -12800,6 +13027,19 @@
           {
             "name": "Morocco",
             "logo": "https://media.api-sports.io/football/teams/31.png"
+          },
+          {
+            "name": "Chile",
+            "logo": "https://media.api-sports.io/football/teams/2383.png"
+          }
+        ]
+      },
+      {
+        "minutes": 90,
+        "teams": [
+          {
+            "name": "Qatar",
+            "logo": "https://media.api-sports.io/football/teams/1569.png"
           },
           {
             "name": "Chile",
@@ -13679,7 +13919,7 @@
         ]
       },
       {
-        "minutes": 64,
+        "minutes": 65,
         "teams": [
           {
             "name": "Switzerland",
@@ -14247,7 +14487,7 @@
     "photo": "https://media.api-sports.io/football/players/1854.png",
     "games": [
       {
-        "minutes": 11,
+        "minutes": 12,
         "teams": [
           {
             "name": "Argentina",
@@ -14666,6 +14906,19 @@
             "logo": "https://media.api-sports.io/football/teams/5161.png"
           }
         ]
+      },
+      {
+        "minutes": 90,
+        "teams": [
+          {
+            "name": "Mexico",
+            "logo": "https://media.api-sports.io/football/teams/16.png"
+          },
+          {
+            "name": "Colombia",
+            "logo": "https://media.api-sports.io/football/teams/8.png"
+          }
+        ]
       }
     ]
   },
@@ -14840,6 +15093,19 @@
             "logo": "https://media.api-sports.io/football/teams/2384.png"
           }
         ]
+      },
+      {
+        "minutes": 76,
+        "teams": [
+          {
+            "name": "Saudi Arabia",
+            "logo": "https://media.api-sports.io/football/teams/23.png"
+          },
+          {
+            "name": "USA",
+            "logo": "https://media.api-sports.io/football/teams/2384.png"
+          }
+        ]
       }
     ]
   },
@@ -14884,7 +15150,7 @@
     "photo": "https://media.api-sports.io/football/players/266.png",
     "games": [
       {
-        "minutes": 79,
+        "minutes": 78,
         "teams": [
           {
             "name": "Argentina",
@@ -16182,6 +16448,19 @@
           {
             "name": "Senegal",
             "logo": "https://media.api-sports.io/football/teams/13.png"
+          }
+        ]
+      },
+      {
+        "minutes": 63,
+        "teams": [
+          {
+            "name": "Senegal",
+            "logo": "https://media.api-sports.io/football/teams/13.png"
+          },
+          {
+            "name": "Iran",
+            "logo": "https://media.api-sports.io/football/teams/22.png"
           }
         ]
       }
@@ -17491,7 +17770,7 @@
     "photo": "https://media.api-sports.io/football/players/1920.png",
     "games": [
       {
-        "minutes": 18,
+        "minutes": 17,
         "teams": [
           {
             "name": "Norway",
@@ -18549,7 +18828,21 @@
     "id": 47294,
     "name": "Iñaki Williams",
     "photo": "https://media.api-sports.io/football/players/47294.png",
-    "games": []
+    "games": [
+      {
+        "minutes": 86,
+        "teams": [
+          {
+            "name": "Nicaragua",
+            "logo": "https://media.api-sports.io/football/teams/5164.png"
+          },
+          {
+            "name": "Ghana",
+            "logo": "https://media.api-sports.io/football/teams/1504.png"
+          }
+        ]
+      }
+    ]
   },
   {
     "team": 531,
@@ -18952,7 +19245,7 @@
         ]
       },
       {
-        "minutes": 18,
+        "minutes": 19,
         "teams": [
           {
             "name": "Argentina",
@@ -19408,7 +19701,7 @@
         ]
       },
       {
-        "minutes": 66,
+        "minutes": 65,
         "teams": [
           {
             "name": "Brazil",
@@ -21459,6 +21752,19 @@
             "logo": "https://media.api-sports.io/football/teams/5161.png"
           }
         ]
+      },
+      {
+        "minutes": 46,
+        "teams": [
+          {
+            "name": "Mexico",
+            "logo": "https://media.api-sports.io/football/teams/16.png"
+          },
+          {
+            "name": "Colombia",
+            "logo": "https://media.api-sports.io/football/teams/8.png"
+          }
+        ]
       }
     ]
   },
@@ -21557,7 +21863,21 @@
     "id": 1573,
     "name": "A. Guardado",
     "photo": "https://media.api-sports.io/football/players/1573.png",
-    "games": []
+    "games": [
+      {
+        "minutes": 61,
+        "teams": [
+          {
+            "name": "Mexico",
+            "logo": "https://media.api-sports.io/football/teams/16.png"
+          },
+          {
+            "name": "Colombia",
+            "logo": "https://media.api-sports.io/football/teams/8.png"
+          }
+        ]
+      }
+    ]
   },
   {
     "team": 543,
@@ -21636,7 +21956,7 @@
     "photo": "https://media.api-sports.io/football/players/2476.png",
     "games": [
       {
-        "minutes": 56,
+        "minutes": 55,
         "teams": [
           {
             "name": "Argentina",
