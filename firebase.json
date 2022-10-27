@@ -21,6 +21,10 @@
     ],
     "rewrites": [
       {
+        "source": "/worldcup",
+        "destination": "/worldcup.html"
+      },
+      {
         "source": "**",
         "destination": "/index.html"
       }
