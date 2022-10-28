@@ -94,37 +94,46 @@ $(function () {
 
             playerElement.click((e) => {
               e.preventDefault();
-              $(e.currentTarget).parent().find('button').removeClass('active');
+              $('#goalkeepers').find('button').removeClass('active');
+              $('#defenders').find('button').removeClass('active');
+              $('#midfielders').find('button').removeClass('active');
+              $('#forwards').find('button').removeClass('active');
               $(e.currentTarget).addClass('active');
 
               $('#games').empty();
 
               firebase.firestore().collection('world_cup_games').where('teams', 'array-contains-any', [player.nationality]).get().then((snapshot) => {
-                snapshot.docs.forEach((doc) => {
-                  const game = doc.data();
-                  const gameElement = $('<li>');
-                  gameElement.addClass('list-group-item');
-
-                  const gameDivElement = $('<div>');
-                  gameDivElement.addClass('row');
-
-                  const teamsSpanElement = $('<span>');
-                  teamsSpanElement.addClass('col-6');
-                  // TODO: home, away
-                  teamsSpanElement.text(`${game.Home} vs ${game.Away}`);
-
-                  const timeSpanElement = $('<span>');
-                  timeSpanElement.addClass('col');
-                  // TODO: time
-                  timeSpanElement.text(game.Time.toDate().toLocaleString());
-
-                  gameDivElement.append(teamsSpanElement);
-                  gameDivElement.append(timeSpanElement);
-
-                  gameElement.append(gameDivElement);
+                if (snapshot.docs.length === 0) {
+                  const gameElement = $('<span>');
+                  gameElement.addClass('h4');
+                  gameElement.text('Did not quality');
 
                   $('#games').append(gameElement);
-                });
+                } else {
+                  snapshot.docs.forEach((doc) => {
+                    const game = doc.data();
+                    const gameElement = $('<li>');
+                    gameElement.addClass('list-group-item');
+
+                    const gameDivElement = $('<div>');
+                    gameDivElement.addClass('row');
+
+                    const teamsSpanElement = $('<span>');
+                    teamsSpanElement.addClass('col-6');
+                    teamsSpanElement.text(`${game.Home} vs ${game.Away}`);
+
+                    const timeSpanElement = $('<span>');
+                    timeSpanElement.addClass('col');
+                    timeSpanElement.text(game.Time.toDate().toLocaleString());
+
+                    gameDivElement.append(teamsSpanElement);
+                    gameDivElement.append(timeSpanElement);
+
+                    gameElement.append(gameDivElement);
+
+                    $('#games').append(gameElement);
+                  });
+                }
               });
             });
 
@@ -139,9 +148,9 @@ $(function () {
             } else if (player.position === 'Forward') {
               $('#forwards').append(playerElement);
             }
-
-            // $('#goalkeepers button')[0].click();
           });
+
+          $('#goalkeepers button')[0].click();
         });
       });
       $('#teams').append(teamElement);

@@ -1,3 +1,8 @@
 caption {
   caption-side: top;
 }
+
+.scrollable {
+  height: 100vh;
+  overflow-y: scroll;
+}
