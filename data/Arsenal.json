@@ -1,0 +1,188 @@
+[
+  {
+    "name": "Aaron Ramsdale",
+    "number": "1",
+    "nationality": "England",
+    "position": "Goalkeeper"
+  },
+  {
+    "name": "Matt Turner",
+    "number": "30",
+    "nationality": "USA",
+    "position": "Goalkeeper"
+  },
+  {
+    "name": "Karl Hein",
+    "number": "31",
+    "nationality": "Estonia",
+    "position": "Goalkeeper"
+  },
+  {
+    "name": "Kieran Tierney",
+    "number": "3",
+    "nationality": "Scotland",
+    "position": "Defender"
+  },
+  {
+    "name": "Ben White",
+    "number": "4",
+    "nationality": "England",
+    "position": "Defender"
+  },
+  {
+    "name": "Gabriel",
+    "number": "6",
+    "nationality": "Brazil",
+    "position": "Defender"
+  },
+  {
+    "name": "William Saliba",
+    "number": "12",
+    "nationality": "France",
+    "position": "Defender"
+  },
+  {
+    "name": "Rob Holding",
+    "number": "16",
+    "nationality": "England",
+    "position": "Defender"
+  },
+  {
+    "name": "C\u00e9dric Soares",
+    "number": "17",
+    "nationality": "Portugal",
+    "position": "Defender"
+  },
+  {
+    "name": "Takehiro Tomiyasu",
+    "number": "18",
+    "nationality": "Japan",
+    "position": "Defender"
+  },
+  {
+    "name": "Lino Sousa",
+    "number": "96",
+    "nationality": "England",
+    "position": "Defender"
+  },
+  {
+    "name": "Thomas Partey",
+    "number": "5",
+    "nationality": "Ghana",
+    "position": "Midfielder"
+  },
+  {
+    "name": "Bukayo Saka",
+    "number": "7",
+    "nationality": "England",
+    "position": "Midfielder"
+  },
+  {
+    "name": "Martin \u00d8degaard",
+    "number": "8",
+    "nationality": "Norway",
+    "position": "Midfielder"
+  },
+  {
+    "name": "Emile Smith Rowe",
+    "number": "10",
+    "nationality": "England",
+    "position": "Midfielder"
+  },
+  {
+    "name": "Fabio Vieira",
+    "number": "21",
+    "nationality": "Portugal",
+    "position": "Midfielder"
+  },
+  {
+    "name": "Albert Sambi Lokonga",
+    "number": "23",
+    "nationality": "Belgium",
+    "position": "Midfielder"
+  },
+  {
+    "name": "Mohamed Elneny",
+    "number": "25",
+    "nationality": "Egypt",
+    "position": "Midfielder"
+  },
+  {
+    "name": "Granit Xhaka",
+    "number": "34",
+    "nationality": "Switzerland",
+    "position": "Midfielder"
+  },
+  {
+    "name": "Oleksandr Zinchenko",
+    "number": "35",
+    "nationality": "Ukraine",
+    "position": "Midfielder"
+  },
+  {
+    "name": "Catalin Cirjan",
+    "number": "44",
+    "nationality": "Romania",
+    "position": "Midfielder"
+  },
+  {
+    "name": "Matthew Smith",
+    "number": "72",
+    "nationality": "England",
+    "position": "Midfielder"
+  },
+  {
+    "name": "Ethan Nwaneri",
+    "number": "83",
+    "nationality": "England",
+    "position": "Midfielder"
+  },
+  {
+    "name": "Amario Cozier-Duberry",
+    "number": "85",
+    "nationality": "England",
+    "position": "Midfielder"
+  },
+  {
+    "name": "Bradley Ibrahim",
+    "number": "89",
+    "nationality": "England",
+    "position": "Midfielder"
+  },
+  {
+    "name": "Gabriel Jesus",
+    "number": "9",
+    "nationality": "Brazil",
+    "position": "Forward"
+  },
+  {
+    "name": "Gabriel Martinelli",
+    "number": "11",
+    "nationality": "Brazil",
+    "position": "Forward"
+  },
+  {
+    "name": "Edward Nketiah",
+    "number": "14",
+    "nationality": "England",
+    "position": "Forward"
+  },
+  {
+    "name": "Reiss Nelson",
+    "number": "24",
+    "nationality": "England",
+    "position": "Forward"
+  },
+  {
+    "name": "Marquinhos",
+    "number": "27",
+    "nationality": "Brazil",
+    "position": "Forward"
+  },
+  {
+    "name": "Khayon Edwards",
+    "number": "47",
+    "nationality": "England",
+    "position": "Forward"
+  }
+]
