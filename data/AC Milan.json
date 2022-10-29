@@ -1,0 +1,206 @@
+[
+  {
+    "name": "Ciprian Tatarusanu",
+    "number": 1,
+    "nationality": "Romania",
+    "position": "Goalkeeper"
+  },
+  {
+    "name": "Mike Maignan",
+    "number": 16,
+    "nationality": "France",
+    "position": "Goalkeeper"
+  },
+  {
+    "name": "Antonio Mirante",
+    "number": 83,
+    "nationality": "Italy",
+    "position": "Goalkeeper"
+  },
+  {
+    "name": "Lapo Francesco Maria Nava",
+    "number": 92,
+    "nationality": "Italy",
+    "position": "Goalkeeper"
+  },
+  {
+    "name": "Andreas Jungdal",
+    "number": 96,
+    "nationality": "Denmark",
+    "position": "Goalkeeper"
+  },
+  {
+    "name": "Davide Calabria",
+    "number": 2,
+    "nationality": "Italy",
+    "position": "Defender"
+  },
+  {
+    "name": "Fod\u00e9 Ballo-Toure",
+    "number": 5,
+    "nationality": "Senegal",
+    "position": "Defender"
+  },
+  {
+    "name": "Theo Hern\u00e1ndez",
+    "number": 19,
+    "nationality": "France",
+    "position": "Defender"
+  },
+  {
+    "name": "Pierre Kalulu",
+    "number": 20,
+    "nationality": "France",
+    "position": "Defender"
+  },
+  {
+    "name": "Sergi\u00f1o Dest",
+    "number": 21,
+    "nationality": "USA",
+    "position": "Defender"
+  },
+  {
+    "name": "Fikayo Tomori",
+    "number": 23,
+    "nationality": "England",
+    "position": "Defender"
+  },
+  {
+    "name": "Simon Kjaer",
+    "number": 24,
+    "nationality": "Denmark",
+    "position": "Defender"
+  },
+  {
+    "name": "Alessandro Florenzi",
+    "number": 25,
+    "nationality": "Italy",
+    "position": "Defender"
+  },
+  {
+    "name": "Malick Thiaw",
+    "number": 28,
+    "nationality": "Germany",
+    "position": "Defender"
+  },
+  {
+    "name": "Matteo Gabbia",
+    "number": 46,
+    "nationality": "Italy",
+    "position": "Defender"
+  },
+  {
+    "name": "Andrei Coubis",
+    "number": 93,
+    "nationality": "Romania",
+    "position": "Defender"
+  },
+  {
+    "name": "Isma\u00ebl Bennacer",
+    "number": 4,
+    "nationality": "Algeria",
+    "position": "Midfielder"
+  },
+  {
+    "name": "Yacine Adli",
+    "number": 7,
+    "nationality": "France",
+    "position": "Midfielder"
+  },
+  {
+    "name": "Sandro Tonali",
+    "number": 8,
+    "nationality": "Italy",
+    "position": "Midfielder"
+  },
+  {
+    "name": "Brahim D\u00edaz",
+    "number": 10,
+    "nationality": "Spain",
+    "position": "Midfielder"
+  },
+  {
+    "name": "Tiemou\u00e9 Bakayoko",
+    "number": 14,
+    "nationality": "France",
+    "position": "Midfielder"
+  },
+  {
+    "name": "Tommaso Pobega",
+    "number": 32,
+    "nationality": "Italy",
+    "position": "Midfielder"
+  },
+  {
+    "name": "Rade Krunic",
+    "number": 33,
+    "nationality": "Bosnia and Herzegovina",
+    "position": "Midfielder"
+  },
+  {
+    "name": "Aster Vranckx",
+    "number": 40,
+    "nationality": "Belgium",
+    "position": "Midfielder"
+  },
+  {
+    "name": "Alexis Saelemaekers",
+    "number": 56,
+    "nationality": "Belgium",
+    "position": "Midfielder"
+  },
+  {
+    "name": "Antonio Gala",
+    "number": 88,
+    "nationality": "Italy",
+    "position": "Midfielder"
+  },
+  {
+    "name": "Charles De Ketelaere",
+    "number": 90,
+    "nationality": "Belgium",
+    "position": "Midfielder"
+  },
+  {
+    "name": "Olivier Giroud",
+    "number": 9,
+    "nationality": "France",
+    "position": "Forward"
+  },
+  {
+    "name": "Zlatan Ibrahimovic",
+    "number": 11,
+    "nationality": "Sweden",
+    "position": "Forward"
+  },
+  {
+    "name": "Ante Rebic",
+    "number": 12,
+    "nationality": "Croatia",
+    "position": "Forward"
+  },
+  {
+    "name": "Rafael Le\u00e3o",
+    "number": 17,
+    "nationality": "Portugal",
+    "position": "Forward"
+  },
+  {
+    "name": "Marko Lazetic",
+    "number": 22,
+    "nationality": "Serbia",
+    "position": "Forward"
+  },
+  {
+    "name": "Divock Origi",
+    "number": 27,
+    "nationality": "Belgium",
+    "position": "Forward"
+  },
+  {
+    "name": "Junior Messias",
+    "number": 30,
+    "nationality": "Brazil",
+    "position": "Forward"
+  }
+]

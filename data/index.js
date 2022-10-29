@@ -2,8 +2,8 @@ import * as fs from 'fs';
 import { initializeApp, applicationDefault } from 'firebase-admin/app';
 import admin from 'firebase-admin';
 
-const leagueName = 'Premier League'
-const teamName = 'Arsenal'
+const leagueName = 'La Liga'
+const teamName = 'Atletico Madrid'
 
 const rawTeam = JSON.parse(fs.readFileSync(`${teamName}.json`, 'utf-8'));
 

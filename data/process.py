@@ -14,7 +14,7 @@ nationalities = {
 
 result = []
 
-teamName = 'Arsenal'
+teamName = 'Paris Saint Germain'
 
 with open(teamName) as file:
     lines = [line.rstrip() for line in file]
@@ -26,7 +26,7 @@ with open(teamName) as file:
         nationality = ' '.join(splits[2].split()[1:])
         player = {
             "name": name,
-            "number": number,
+            "number": int(number),
             "nationality": nationalities[nationality] if nationality in nationalities else nationality,
             "position": positions[position],
         }

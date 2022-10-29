@@ -11,6 +11,6 @@
 1. Copy team squad from ESPN to google spreadsheet
 1. Refer to `Arsenal`, remove useless columns
 1. Copy and paste to a new file, e.g. `ManUnited`
-1. Run `python3 -m process.py`
+1. Run `python3 process.py`
 1. Run `node index.js`
 1. Check firebase cloud firestore

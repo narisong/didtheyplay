@@ -25,9 +25,9 @@ const league_team_mapping = {
   ],
   "Serie A": [
     "AC Milan",
+    "AS Roma",
     "Inter Milan",
     "Juventus",
-    "Roma",
   ],
   "Bundesliga": [
     "Bayern Munich",
@@ -66,7 +66,7 @@ $(function () {
         $('#defenders').empty();
         $('#midfielders').empty();
         $('#forwards').empty();
-        firebase.firestore().collection(`leagues/${league}/teams/${team}/players`).get().then((snapshot) => {
+        firebase.firestore().collection(`leagues/${league}/teams/${team}/players`).orderBy('number').get().then((snapshot) => {
           snapshot.docs.forEach((doc) => {
             const player = doc.data();
             const playerElement = $('<button>');
@@ -85,7 +85,7 @@ $(function () {
             nameSpanElement.text(player.name);
 
             const nationalitySpanElement = $('<span>');
-            nationalitySpanElement.addClass('col');
+            nationalitySpanElement.addClass('col-4');
             nationalitySpanElement.text(player.nationality);
 
             playerDivElement.append(numberSpanElement);
@@ -102,7 +102,7 @@ $(function () {
 
               $('#games').empty();
 
-              firebase.firestore().collection('world_cup_games').where('teams', 'array-contains-any', [player.nationality]).get().then((snapshot) => {
+              firebase.firestore().collection('world_cup_games').where('teams', 'array-contains-any', [player.nationality]).orderBy('time').get().then((snapshot) => {
                 if (snapshot.docs.length === 0) {
                   const gameElement = $('<span>');
                   gameElement.addClass('h4');
@@ -120,11 +120,11 @@ $(function () {
 
                     const teamsSpanElement = $('<span>');
                     teamsSpanElement.addClass('col-6');
-                    teamsSpanElement.text(`${game.Home} vs ${game.Away}`);
+                    teamsSpanElement.text(`${game.home} vs ${game.away}`);
 
                     const timeSpanElement = $('<span>');
                     timeSpanElement.addClass('col');
-                    timeSpanElement.text(game.Time.toDate().toLocaleString());
+                    timeSpanElement.text(game.time.toDate().toLocaleString());
 
                     gameDivElement.append(teamsSpanElement);
                     gameDivElement.append(timeSpanElement);
