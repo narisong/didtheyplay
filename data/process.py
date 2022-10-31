@@ -14,7 +14,7 @@ nationalities = {
 
 result = []
 
-teamName = 'Napoli'
+teamName = 'Borussia Dortmund'
 
 with open(teamName) as file:
     lines = [line.rstrip() for line in file]
