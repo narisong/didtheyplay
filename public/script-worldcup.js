@@ -28,6 +28,7 @@ const league_team_mapping = {
     "AS Roma",
     "Inter Milan",
     "Juventus",
+    "Napoli",
   ],
   "Bundesliga": [
     "Bayern Munich",
