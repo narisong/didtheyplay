@@ -2,8 +2,8 @@ import * as fs from 'fs';
 import { initializeApp, applicationDefault } from 'firebase-admin/app';
 import admin from 'firebase-admin';
 
-const leagueName = 'Serie A'
-const teamName = 'Napoli'
+const leagueName = 'Premier League';
+const teamName = 'Tottenham Hotspur';
 
 const rawTeam = JSON.parse(fs.readFileSync(`${teamName}.json`, 'utf-8'));
 
@@ -15,5 +15,6 @@ initializeApp({
 });
 
 rawTeam.forEach(player => {
+  admin.firestore().doc(`leagues/${leagueName}/teams/${teamName}`).set({});
   admin.firestore().doc(`leagues/${leagueName}/teams/${teamName}/players/${player.name}`).set(player);
 });

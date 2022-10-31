@@ -47,117 +47,116 @@ $(function () {
     const league = $(e.currentTarget).text().trim();
 
     $('#teams').empty();
-    const teams = league_team_mapping[$(e.currentTarget).text().trim()];
-    for (let i = 0; i < teams.length; i++) {
-      const team = teams[i]
+    firebase.firestore().collection(`leagues/${league}/teams`).get().then((snapshot) => {
+      snapshot.docs.forEach((doc) => {
+        const team = doc.data();
+        console.log('team', team)
 
-      const teamElement = $('<button>');
-      teamElement.addClass('list-group-item list-group-item-action');
-      if (i === 0) {
-        teamElement.addClass('active');
-      }
-      teamElement.attr('type', 'button');
-      teamElement.text(team);
-      teamElement.click((e) => {
-        e.preventDefault();
-        $(e.currentTarget).parent().find('button').removeClass('active');
-        $(e.currentTarget).addClass('active');
+        const teamElement = $('<button>');
+        teamElement.addClass('list-group-item list-group-item-action');
+        teamElement.attr('type', 'button');
+        teamElement.text(doc.id);
+        teamElement.click((e) => {
+          e.preventDefault();
+          $(e.currentTarget).parent().find('button').removeClass('active');
+          $(e.currentTarget).addClass('active');
 
-        $('#goalkeepers').empty();
-        $('#defenders').empty();
-        $('#midfielders').empty();
-        $('#forwards').empty();
-        firebase.firestore().collection(`leagues/${league}/teams/${team}/players`).orderBy('number').get().then((snapshot) => {
-          snapshot.docs.forEach((doc) => {
-            const player = doc.data();
-            const playerElement = $('<button>');
-            playerElement.addClass('list-group-item list-group-item-action');
-            playerElement.attr('type', 'button');
+          $('#goalkeepers').empty();
+          $('#defenders').empty();
+          $('#midfielders').empty();
+          $('#forwards').empty();
+          firebase.firestore().collection(`leagues/${league}/teams/${doc.id}/players`).orderBy('number').get().then((snapshot) => {
+            snapshot.docs.forEach((doc) => {
+              const player = doc.data();
+              const playerElement = $('<button>');
+              playerElement.addClass('list-group-item list-group-item-action');
+              playerElement.attr('type', 'button');
 
-            const playerDivElement = $('<div>');
-            playerDivElement.addClass('row');
+              const playerDivElement = $('<div>');
+              playerDivElement.addClass('row');
 
-            const numberSpanElement = $('<span>');
-            numberSpanElement.addClass('col-2');
-            numberSpanElement.text(player.number);
+              const numberSpanElement = $('<span>');
+              numberSpanElement.addClass('col-2');
+              numberSpanElement.text(player.number);
 
-            const nameSpanElement = $('<span>');
-            nameSpanElement.addClass('col-6');
-            nameSpanElement.text(player.name);
+              const nameSpanElement = $('<span>');
+              nameSpanElement.addClass('col-6');
+              nameSpanElement.text(player.name);
 
-            const nationalitySpanElement = $('<span>');
-            nationalitySpanElement.addClass('col-4');
-            nationalitySpanElement.text(player.nationality);
+              const nationalitySpanElement = $('<span>');
+              nationalitySpanElement.addClass('col-4');
+              nationalitySpanElement.text(player.nationality);
 
-            playerDivElement.append(numberSpanElement);
-            playerDivElement.append(nameSpanElement);
-            playerDivElement.append(nationalitySpanElement);
+              playerDivElement.append(numberSpanElement);
+              playerDivElement.append(nameSpanElement);
+              playerDivElement.append(nationalitySpanElement);
 
-            playerElement.click((e) => {
-              e.preventDefault();
-              $('#goalkeepers').find('button').removeClass('active');
-              $('#defenders').find('button').removeClass('active');
-              $('#midfielders').find('button').removeClass('active');
-              $('#forwards').find('button').removeClass('active');
-              $(e.currentTarget).addClass('active');
+              playerElement.click((e) => {
+                e.preventDefault();
+                $('#goalkeepers').find('button').removeClass('active');
+                $('#defenders').find('button').removeClass('active');
+                $('#midfielders').find('button').removeClass('active');
+                $('#forwards').find('button').removeClass('active');
+                $(e.currentTarget).addClass('active');
 
-              $('#games').empty();
+                $('#games').empty();
 
-              firebase.firestore().collection('world_cup_games').where('teams', 'array-contains-any', [player.nationality]).orderBy('time').get().then((snapshot) => {
-                if (snapshot.docs.length === 0) {
-                  const gameElement = $('<span>');
-                  gameElement.addClass('h4');
-                  gameElement.text('Did not quality');
-
-                  $('#games').append(gameElement);
-                } else {
-                  snapshot.docs.forEach((doc) => {
-                    const game = doc.data();
-                    const gameElement = $('<li>');
-                    gameElement.addClass('list-group-item');
-
-                    const gameDivElement = $('<div>');
-                    gameDivElement.addClass('row');
-
-                    const teamsSpanElement = $('<span>');
-                    teamsSpanElement.addClass('col-6');
-                    teamsSpanElement.text(`${game.home} vs ${game.away}`);
-
-                    const timeSpanElement = $('<span>');
-                    timeSpanElement.addClass('col');
-                    timeSpanElement.text(game.time.toDate().toLocaleString());
-
-                    gameDivElement.append(teamsSpanElement);
-                    gameDivElement.append(timeSpanElement);
-
-                    gameElement.append(gameDivElement);
+                firebase.firestore().collection('world_cup_games').where('teams', 'array-contains-any', [player.nationality]).orderBy('time').get().then((snapshot) => {
+                  if (snapshot.docs.length === 0) {
+                    const gameElement = $('<span>');
+                    gameElement.addClass('h4');
+                    gameElement.text('Did not quality');
 
                     $('#games').append(gameElement);
-                  });
-                }
+                  } else {
+                    snapshot.docs.forEach((doc) => {
+                      const game = doc.data();
+                      const gameElement = $('<li>');
+                      gameElement.addClass('list-group-item');
+
+                      const gameDivElement = $('<div>');
+                      gameDivElement.addClass('row');
+
+                      const teamsSpanElement = $('<span>');
+                      teamsSpanElement.addClass('col-6');
+                      teamsSpanElement.text(`${game.home} vs ${game.away}`);
+
+                      const timeSpanElement = $('<span>');
+                      timeSpanElement.addClass('col');
+                      timeSpanElement.text(game.time.toDate().toLocaleString());
+
+                      gameDivElement.append(teamsSpanElement);
+                      gameDivElement.append(timeSpanElement);
+
+                      gameElement.append(gameDivElement);
+
+                      $('#games').append(gameElement);
+                    });
+                  }
+                });
               });
+
+              playerElement.append(playerDivElement);
+
+              if (player.position === 'Goalkeeper') {
+                $('#goalkeepers').append(playerElement);
+              } else if (player.position === 'Defender') {
+                $('#defenders').append(playerElement);
+              } else if (player.position === 'Midfielder') {
+                $('#midfielders').append(playerElement);
+              } else if (player.position === 'Forward') {
+                $('#forwards').append(playerElement);
+              }
             });
 
-            playerElement.append(playerDivElement);
-
-            if (player.position === 'Goalkeeper') {
-              $('#goalkeepers').append(playerElement);
-            } else if (player.position === 'Defender') {
-              $('#defenders').append(playerElement);
-            } else if (player.position === 'Midfielder') {
-              $('#midfielders').append(playerElement);
-            } else if (player.position === 'Forward') {
-              $('#forwards').append(playerElement);
-            }
+            $('#goalkeepers button')[0].click();
           });
-
-          $('#goalkeepers button')[0].click();
         });
+        $('#teams').append(teamElement);
       });
-      $('#teams').append(teamElement);
-    }
 
-    $('#teams button')[0].click();
+      $('#teams button')[0].click();
+    });
   });
 
   $('#leagues button')[0].click();
