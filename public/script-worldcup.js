@@ -160,4 +160,13 @@ $(function () {
   });
 
   $('#leagues button')[0].click();
+
+  $('#submit').click((e) => {
+    firebase.firestore().collection('messages').doc().set({
+      name: $('#name').val(),
+      email: $('#email').val(),
+      message: $('#message').val(),
+      timestamp: new Date(),
+    });
+  });
 })
